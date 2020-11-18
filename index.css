@@ -1,0 +1,96 @@
+.sidebar {
+  height: 100%; 
+  width: 20%; 
+  position: fixed; 
+  z-index: 1; 
+  top: 100px; 
+  left: 0;
+  background-color:rgba(105, 226, 121, 0.3); 
+  overflow-x: hidden; 
+  display: flex;
+}
+.sidebar__list{
+  list-style: none;
+  align-items: center;
+  padding-top: 0;
+  margin-top: 0;
+  padding-left: 5%;
+  flex-direction: column;
+  justify-content: left;
+  flex-wrap: wrap;
+}
+.sidebar__item {
+  padding-top: 10px;
+}
+.navbar{
+  background-color: rgb(105, 226, 121,0.3); 
+  width: 100%;
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  top: 0;
+  left: 0;
+  height: 100px;
+}
+@media only screen and (max-width: 1200px){
+  .sidebar__list{
+    padding-top: 0;
+    margin-top: 0;
+    padding-left: 5%;
+  }
+  body{
+    background-size: 300px;
+  }
+  .main{
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .main__card {
+    margin-bottom: 50px;
+    width: 400px;
+  }
+}
+.navbar__button{
+  left: 1%;
+  position: fixed;
+  margin-right: 10px;
+}
+.navbar__title{
+  margin-left: 6%;
+  position: fixed;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 35px;
+  padding-left: 15%;
+}
+.sidebar__link:hover { text-decoration: none; }
+.sidebar__link{
+  text-decoration: none; 
+  color: black;
+  font-family: 'Courier New', Courier, monospace;
+}
+body{
+  background-image: url(https://thumb.tildacdn.com/tild6536-6436-4266-b565-323530656634/-/resize/620x/-/format/webp/_4_1_1.png);
+  background-attachment: fixed;
+  background-position: right bottom;
+  background-repeat: no-repeat;
+}
+.main{
+  display: flex;
+  flex-direction: row;
+  margin-top: 150px;
+  margin-left: 21%;
+  margin-right: 0 auto;
+  flex-wrap: wrap;
+}
+.main__card{
+  margin-right: 60px;
+  margin-bottom: 50px;
+  width: 300px;
+  height: 200px;
+  border: 1px;
+  border-style: solid;
+  padding: 5px 5px 5px 10px;
+  overflow-x: hidden; 
+  font-family: 'Courier New', Courier, monospace;
+}
